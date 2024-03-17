@@ -7,10 +7,18 @@ Below I have attached various code snippets which I feel best showcase this proj
 ### Character Abilites
 ![PrimaryCode](https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/fbd4d2cf-ad18-4a83-ac5b-91948f9d44a8)
 
+
+https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/4591a107-d95d-41ac-853a-3d2906da3c71
+
+
 Above is the code I use for the players main attack. This attack is rather simple and uses a collider sphere to detect enemies inside a radius. If there are enemies inside the collider the "TakeDamage()" method will be called inside the enemies script with the correct damage information.
 
 ![SecondaryCode](https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/24fd6260-a5bc-478e-970d-6f1c43869fc1)
 ![SecondaryPrefabScript](https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/1d547a60-239f-408c-9608-cf7f57e98c00)
+
+
+https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/decdc1da-227d-4226-b853-992000bc1959
+
 
 Above is are the two scripts I use to instantiate a Wave Prefab. 
 
@@ -43,6 +51,10 @@ The second snippet is also simpler than it seems, inside the method I set static
 ![PlayerUIscript](https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/e181d259-170a-4407-870c-656427081032)
 
 Above is how I display the character information from the player scripts into a Unity Canvas.
+
+![HealthBar](https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/0e65102f-da78-41d1-b4bf-c82ec756dc0b)
+![LevelBar](https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/86b443c6-473c-4907-a2ae-6ffa1b0a38ec)
+
 
 ![JumpingCode](https://github.com/O1Wilson/Eternal-Labyrinth/assets/158622394/c2504272-c317-4a91-9e4a-8ffba6d93f66)
 
