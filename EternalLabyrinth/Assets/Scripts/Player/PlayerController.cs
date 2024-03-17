@@ -5,8 +5,8 @@ public class PlayerController : MonoBehaviour
 {
     //Jumping and Movement Variables
     private float horizontal;
-    private float speed = 7f;
-    private float jumpingPower = 6f;
+    private float speed = 6f;
+    private float jumpingPower = 4.5f;
     private bool isFacingRight = true;
 
     private bool isJumping;
@@ -72,8 +72,6 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
 
-        //Lmb, Rmb, Shift, R, E
-
         WallSlide();
         WallJump();
 
@@ -99,7 +97,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator JumpCooldown()
     {
         isJumping = true;
-        yield return new WaitForSeconds(0.05f); // Adjusts Duration Of Wall Jump
+        yield return new WaitForSeconds(0.05f); // Adjusts Duration Jump Buffer
         isJumping = false;
     }
 
@@ -113,7 +111,7 @@ public class PlayerController : MonoBehaviour
         if (IsWalled() && !IsGrounded() && horizontal != 0f)
         {
             isWallSliding = true;
-            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue)); // Clamps player to wall, Slows descent
         }
         else
         {
@@ -139,7 +137,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0f)
         {
             isWallJumping = true;
-            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y); // Transforms Player
             wallJumpingCounter = 0f;
 
             if (transform.localScale.x != wallJumpingDirection)
