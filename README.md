@@ -1,5 +1,7 @@
 # Eternal Labyrinth
- 2D rougelike/action-platformer. This game explores complex systems in C# using the Unity Engine, Featuring a sophisticated movement system, diverse characters with unique abilities, custom items each with their own interaction + synergy, and animation + SFX implementation.(Coming Soon). 
+ 2D rougelike/action-platformer. This game explores complex systems in C# using the Unity Engine, Featuring a sophisticated movement system, diverse characters with unique abilities, custom items each with their own interaction + synergy, and animation + SFX implementation.(Coming Soon).
+
+Please check out the orginizational methods I used inside the assets folder, every thing is neatly organized including the code! Check out the parent classes I use for the player to allow for expansion later if decided.
 # Code Snippets
 Below I have attached various code snippets which I feel best showcase this project, please explore the unique systems in full for a better understanding of the skills that I can provide! 
 ### Character Abilites
