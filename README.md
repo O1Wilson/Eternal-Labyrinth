@@ -4,4 +4,4 @@
  Featuring a sophisticated movement system, 
  diverse characters with unique abilities,
  custom items each with their own interaction + synergy, 
- and animation + SFX implementation.
+ and animation + SFX implementation.(Coming Soon).
