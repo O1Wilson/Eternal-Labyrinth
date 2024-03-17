@@ -109749,6 +109749,7 @@ MonoBehaviour:
   attackRate: 0
   xp: 0
   level: 0
+  priorLevel: 0
   money: 0
   maxHealth: 0
   healthRegen: 0
